@@ -1,0 +1,26 @@
+html, body {
+    font-family: 'Raleway', sans-serif;
+    color: #000;
+    margin: 0;
+}
+
+
+/* Header */
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav img {
+    height: 70px;
+}
+
+.nav-link {
+    display: flex;
+}
+
+.nav-link a{
+    text-decoration: none;
+    margin: 0 10px 0 20px;
+}
