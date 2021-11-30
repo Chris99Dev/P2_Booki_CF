@@ -18,7 +18,7 @@ html, body {
 
 .logo img{
     width: 100%;
-    height: 40px;
+    height: 50px;
     object-fit: cover;
 }
 
@@ -53,57 +53,77 @@ html, body {
     color: #0065FC;
 }
 
-/* 
-.nav-link {
-    display: flex;
-    width: 270px;
-    height: auto;
-    flex-direction: row;
-    align-content: center;
-    align-items: center;
-}
-
-.nav-link a{
-    box-sizing: border-box;
-    width: 100%;
-    text-decoration: none;
-    text-align: center;
-    color: #000;
-}
-
-.nav-link a:hover {
-    border-top: 2px solid #0065FC;
-    color: #0065FC;
-} */
-
 /* Main */
 
 #banner {
-    width: 100%;
+    margin: 0 35px 0 35px;
 }
 
+#banner h2 {
+    margin-bottom: 10px;
+}
+
+#banner p {
+    margin-top: 10px;
+}
+
+/* Search Bar */
+
 #search-bar {
+    display: inline-flex;
+    width: auto;
     height: 50px;
-    display: flex;
-    justify-content: start;
-    align-items: center;
 }
 
 #search-form {
-    position: relative;
-    border-radius: 10px;
-    border: 1px solid black;
-    background-color: #f2f2f2;
+    width: 100%;
+    height: 100%;
     display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-content: center;
+    align-items: center;
+    background-color: #f2f2f2;
+    border-radius: 15px;
 }
 
-#search-form .search_logo {
-    width: 40px;
-    height: 40px;
+#search-logo {
+    width: 50px;
+    height: 50px;
     display: flex;
     align-items: center;
     justify-content: center;
 }
+
+#search-txt {
+    border: none;
+    width: 190px;
+    height: 45px;
+    color: #000;
+}
+
+#search-txt::placeholder {
+    color: #000;
+    font-weight: bold;
+    padding-left: 15px;
+}
+
+#search-btn {
+    border: none;
+    height: 100%;
+    width: 140px;
+    background-color: #0065FC;
+    color: #fff;
+    font-weight: bold;
+    font-size: large;
+    border-radius: 0 15px 15px 0;
+}
+
+#search-btn:hover {
+    background-color: #0065fcb2;
+}
+
+/*
 
 #search-form .search_txt {
     width: 210px;
@@ -122,4 +142,4 @@ html, body {
     background-color: #0065FC;
     color: #fff;
     font-weight: bold;
-}
+} */
