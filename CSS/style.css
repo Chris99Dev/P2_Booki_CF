@@ -55,7 +55,6 @@ html, body {
 
 
 /* Main */
-
 #banner {
     margin: 0 35px 0 35px;
 }
@@ -69,8 +68,8 @@ html, body {
     margin-top: 10px;
 }
 
-/* Search Bar */
 
+/* Search Bar */
 #search-bar {
     display: inline-flex;
     width: auto;
@@ -99,7 +98,7 @@ html, body {
 
 #search-txt {
     border: none;
-    width: 190px;
+    width: 230px;
     height: 45px;
     color: #000;
 }
@@ -210,12 +209,14 @@ html, body {
     margin: 30px 35px 0 35px;
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
 }
 
 #hebergements {
     border-radius: 20px;
     background-color: #f2f2f2;
-    width: 850px;
+    width: 880px;
+    height: 590px;
 }
 
 #hebergements h2 {
@@ -299,18 +300,26 @@ html, body {
     font-weight: bold;
 }
 
-/* #populaires {
+/* Side Populaires */
+#populaires {
     background-color: #f2f2f2;
     border-radius: 20px;
-    width: 30%;
-} */
+    width: 490px;
+    height: 590px;
+}
+
+#populaires h2 {
+    font-weight: bold;
+    font-size: 20px;
+    padding: 30px 35px 10px 35px;
+}
+
+/* Activites Section */
+#activites {
+    margin: 30px 35px 0 35px;
+}
 
 /*
-
-#search-form .search_txt {
-    width: 210px;
-    padding-left: 15px;
-}
 
 #search-form .search_txt::placeholder {
     color: #000;
