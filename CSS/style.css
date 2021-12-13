@@ -386,18 +386,21 @@ main {
 
 .activites-list {
     display: flex;
+    justify-content: space-between;
 }
 
 .activites-left {
-    width: 50%;
+    width: 48%;
     display: flex;
-    gap: 45px;
+    gap: 30px;
+    justify-content: flex-end;
 }
 
 .activites-right {
-    width: 50%;
+    width: 48%;
     display: flex;
-    gap: 45px;
+    gap: 30px;
+    justify-content: flex-start;
 }
 
 .activite-double {
@@ -488,6 +491,11 @@ main {
     font-size: 14px;
 }
 
+#activites .activite1:hover, .activite2:hover, .activite3:hover, .activite4:hover, .activite5:hover, .activite6:hover {
+    opacity: 0.7;
+    cursor: pointer;
+    box-shadow: 1px 1px 15px #0065FC;
+}
 
 /* Footer Block */
 footer{
@@ -527,4 +535,14 @@ footer a:hover{
 
 .footerleft a, .footermiddle a, .footerright a{
     margin: 0;
+}
+
+
+/* Media for Big screen */
+@media screen and (min-width: 2560px) {
+    /* Adjusting the main container to be small */
+    main {
+        width: 66%;
+        margin: auto;
+    }
 }
