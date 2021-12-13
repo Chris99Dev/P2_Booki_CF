@@ -394,6 +394,7 @@ main {
     display: flex;
     gap: 30px;
     justify-content: flex-end;
+    flex-wrap: wrap;
 }
 
 .activites-right {
@@ -401,6 +402,7 @@ main {
     display: flex;
     gap: 30px;
     justify-content: flex-start;
+    flex-wrap: wrap;
 }
 
 .activite-double {
@@ -507,7 +509,7 @@ footer{
     align-items: flex-start;
     gap: 17%;
     align-content: center;
-    padding: 20px;
+    padding: 20px 45px 18px 45px;
 }
 
 footer a{
@@ -545,4 +547,52 @@ footer a:hover{
         width: 66%;
         margin: auto;
     }
+}
+
+@media screen and (max-width: 1024px) {
+    header {
+        margin: 18px;
+    }
+
+    /* Hebergement Block */
+    #hebergements {
+        height: 100%;
+    }
+
+    .card-marseille {
+        width: 170px;
+        height: 200px;
+    }
+
+    .more {
+        margin: 0 0 20px 30px;
+    }
+
+    /* Populaire Block */
+    #populaires {
+        height: 100%;
+    }
+    .pop-card {
+        width: 80%;
+        height: 134px;
+    }
+
+    .pop-card img {
+        padding-right: 7px;
+     }
+
+    .pop-title{
+        font-size: 12px;
+    }
+
+    .pop-pres h4{
+        font-size: 14px;
+        margin-bottom: 2px;
+    }
+
+    .pop-pres p {
+        font-size: 13px;
+        margin: 2px;
+    }
+
 }
