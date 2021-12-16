@@ -216,7 +216,7 @@ main {
 #hebergements {
     border-radius: 20px;
     background-color: #f2f2f2;
-    width: 63%;
+    width: 65%;
     height: auto;
     box-sizing: content-box;
     overflow: auto;
@@ -246,15 +246,16 @@ main {
     justify-content: space-around;
     align-items: center;
     margin-bottom: 20px;
+    width: 97%;
+    gap: 0px;
 }
 
 .card-marseille {
     background-color: #fff;
     border-radius: 20px;
-    width: 230px;
-    height: 210px;
-    margin: 0 15px 15px 15px ;
-    box-shadow: rgba(0, 0, 0, 0.082) 2px 2px;
+    width: 30%;
+    height: 235px;
+    box-shadow: rgb(0 0 0 / 8%) 2px 2px;
 }
 
 .card-marseille:hover {
@@ -266,7 +267,7 @@ main {
 .card-marseille img {
     overflow: auto;
     width: 97%;
-    height: 50%;
+    height: 55%;
     object-fit: cover;
     padding-left: 4px;
     padding-top: 5px;
@@ -392,17 +393,17 @@ main {
 .activites-left {
     width: 48%;
     display: flex;
-    gap: 30px;
-    justify-content: flex-end;
+    gap: 39px;
+    justify-content: flex-start;
     flex-wrap: wrap;
 }
 
 .activites-right {
     width: 48%;
     display: flex;
-    gap: 30px;
-    justify-content: flex-start;
+    gap: 39px;
     flex-wrap: wrap;
+    justify-content: flex-start;
 }
 
 .activite-double {
@@ -413,15 +414,15 @@ main {
 
 /* Activites left Block */
 .activite1, .activite4 {
-    height: 380px;
+    height: 384px;
     border-radius: 20px;
     background-color: #fff;
     box-shadow: #99999923 2px 4px;
 }
 
 .activite1 img, .activite4 img {
-    width: 260px;
-    height: 86%;
+    width: 337px;
+    height: 90%;
     border-radius: 20px 20px 0 0;
     object-fit: cover;
 }
@@ -440,7 +441,7 @@ main {
 }
 
 .activite2 img {
-    width: 310px;
+    width: 366px;
     height: 75%;
     border-radius: 20px 20px 0 0;
     object-fit: cover;
@@ -461,7 +462,7 @@ main {
 }
 
 .activite3 img {
-    width: 310px;
+    width: 366px;
     height: 69%;
     border-radius: 20px 20px 0 0;
     object-fit: cover;
@@ -482,7 +483,7 @@ main {
 }
 
 .activite5 img, .activite6 img {
-    width: 310px;
+    width: 366px;
     height: 69%;
     border-radius: 20px 20px 0 0;
     object-fit: cover;
@@ -539,14 +540,41 @@ footer a:hover{
     margin: 0;
 }
 
-
+/* MEDIA QUERIES */
 /* Media for Big screen */
 @media screen and (min-width: 2560px) {
     /* Adjusting the main container to be small */
     main {
-        width: 66%;
+        width: 63%;
         margin: auto;
     }
+}
+
+@media screen and (max-width: 1440px) {
+    .activites-list {
+        display: flex;
+        justify-content: flex-start;
+        gap: 35px;
+    }
+
+    .activite1 img, .activite4 img {
+        width: 300px;
+    }
+
+    .activite-double {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .activite2 img, .activite3 img {
+        width: 290px;
+    }
+
+    .activite5 img, .activite6 img {
+        width: 290px;
+    }
+
 }
 
 @media screen and (max-width: 1024px) {
@@ -560,8 +588,13 @@ footer a:hover{
     }
 
     .card-marseille {
-        width: 170px;
+        width: 180px;
         height: 200px;
+    }
+
+    .card-pres h4 {
+        font-size: 15px;
+        margin: 1px 0 2px 15px;
     }
 
     .more {
@@ -575,6 +608,7 @@ footer a:hover{
     .pop-card {
         width: 80%;
         height: 134px;
+        margin: 0px 0 30px 0;
     }
 
     .pop-card img {
@@ -590,9 +624,39 @@ footer a:hover{
         margin-bottom: 2px;
     }
 
+    .activite4 h3 {
+        font-size: 13px;
+        margin-bottom: 2px;
+    }
+
     .pop-pres p {
         font-size: 13px;
         margin: 2px;
     }
 
+    .activite-double {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .activite1 h3, .activite4 h3 {
+        margin: 7px 0 0 10px;
+    }
+
+    .activite5 h3, .activite6 h3 {
+        margin: 11px 0 0px 3px;
+        font-size: 14px;
+    }
+
+    .activite1 img, .activite4 img {
+        width: 200px;
+    }
+
+    .activite2 img, .activite3 img {
+        width: 190px;
+    }
+
+    .activite5 img, .activite6 img {
+        width: 190px;
+    }
 }
