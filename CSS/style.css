@@ -387,7 +387,7 @@ main {
 
 .activites-list {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 .activites-left {
@@ -658,5 +658,111 @@ footer a:hover{
 
     .activite5 img, .activite6 img {
         width: 190px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+    #filtre {
+        display: flex;
+        flex-direction: column;
+        align-content: flex-start;
+        justify-content: flex-start;
+        margin-top: 25px;
+        align-items: flex-start;
+    }
+
+    main {
+        margin: 0;
+    }
+
+    #principal {
+        display: flex;
+        margin: 35px 0 20px 0;
+        flex-direction: column-reverse;
+        flex-wrap: wrap;
+        align-content: flex-start;
+        align-items: center;
+    }
+
+    /* Hebergements Mobile */
+    #hebergements {
+        height: 100%;
+        width: 100%;
+        background-color: #fff;
+    }
+
+    /* Populaire Mobile */
+    #populaires {
+        height: 100%;
+        width: 100%;
+        border-radius: 0;
+    }
+
+    .pop-card {
+        width: 65%;
+        height: 168px;
+        margin: 0px 0 30px 0;
+    }
+
+    /* Activites Mobile */
+
+    #activites {
+        height: 90%;
+        margin: 0 30px 50px 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-content: flex-start;
+    }
+
+    .activites-list {
+        display: flex;
+        justify-content: flex-start;
+        gap: 30px;
+    }
+
+    .activites-left {
+        width: 50%;
+        display: flex;
+        gap: 30px;
+        flex-direction: column;
+        align-items: flex-start;
+        align-content: flex-start;
+    }
+
+    .activites-right {
+        width: 50%;
+        display: flex;
+        gap: 30px;
+        flex-direction: column;
+        align-items: flex-start;
+        align-content: flex-start;
+    }
+
+    .activite-double {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .double-right {
+        gap: 39px;
+    }
+
+    .activite1 img, .activite4 img {
+        width: 309px;
+    }
+
+    .activite2, .activite3 {
+        height: 170px;
+    }
+
+    .activite2 img, .activite3 img {
+        width: 309px;
+    }
+
+    .activite5 img, .activite6 img {
+        width: 309px;
     }
 }
