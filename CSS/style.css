@@ -73,8 +73,6 @@ header {
     justify-content: start;
     align-content: center;
     align-items: center;
-    background-color: #f2f2f2;
-    border-radius: 15px;
 }
 
 #search-logo {
@@ -83,13 +81,15 @@ header {
     display: flex;
     align-items: center;
     justify-content: center;
+    background-color: #f2f2f2;
+    border-radius: 20px 0 0 20px;
 }
 
 #search-txt {
-    border: none;
     width: 230px;
-    height: 45px;
+    height: 46px;
     color: #000;
+    border: 1px solid #f2f2f2;
 }
 
 #search-txt::placeholder {
@@ -194,7 +194,7 @@ cursor: pointer;
     border: 1px solid #e4e3e3;
     border-radius: 50px;
     height: 20px;
-    width: 20px;
+    width: 28px;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -898,4 +898,302 @@ footer a:hover{
     .activite5 img, .activite6 img {
         width: 309px;
     }
+}
+
+/* Mobile responsive */
+@media screen and (max-width: 767px) {
+    .header {
+        margin: 0;
+    }
+
+    .logo {
+        width: 100%;
+        text-align: center;
+    }
+
+    .logo img {
+        height: initial;
+    }
+
+    /* Nav-Bar */
+    .nav-bar {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .nav-list {
+        position: relative;
+        padding: 0;
+        margin: 0;
+    }
+
+    .nav-link {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 32px;
+        width: 100%;
+        padding: 0;
+    }
+
+    .nav-link a {
+        display: block;
+        width: 100%;
+        padding: 0 0 27px 0;
+        text-align: center;
+    }
+
+    .nav-link a:hover {
+        border-top: none;
+        border-bottom: 2px solid #0065FC;
+    }
+
+    /* Banner Block */
+    #banner {
+        margin: 20px;
+    }
+
+    #search-bar {
+        width: 100%;
+    }
+    
+    #search-form {
+        width: 90%;
+    }
+    #search-btn{
+        display: none;
+    }
+
+    #search-txt {
+        width: initial;
+    }
+
+    .search-icon {
+        width: 50px;
+        height: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #0065fc;
+        border-radius: 20px;
+    }
+
+    .search-icon i {
+        color: #fff;
+    }
+
+    #filtre-bar {
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+        gap: 12px 10px;
+    }
+
+    .filtre-btn {
+        margin-right: 7px;
+    }
+
+    .info {
+        margin: 29px 0;
+    }
+
+    /* Principal Block */
+    #principal {
+        margin: 0;
+    }
+
+    /* Populaire Block */
+    .pop-title {
+        font-size: 14px;
+        padding: 20px 20px 0 20px;
+    }
+
+    .pop-list {
+        margin-bottom: 20px;
+    }
+
+    .pop-card {
+        width: 92%;
+        height: 134px;
+        margin: 0px 0 10px 0;
+    }
+
+    .pop-card img {
+        width: 37%;
+    }
+
+    .pop-pres {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: flex-start;
+    }
+
+    .pop-pres h4 {
+        font-size: initial;
+        margin: 0;
+    }
+
+    .pop-pres p {
+        margin: 0;
+        margin-top: -24px;
+    }
+
+    /* Hebergement Block */
+    #hebergements h2 {
+        font-weight: bold;
+        padding: 20px 0 0 14px;
+    }
+
+    .heberg-list {
+        display: flex;
+        flex-direction: column;
+        justify-items: center;
+        align-items: center;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+        align-content: center;
+        gap: 0;
+    }
+
+    .heberg-list1, .heberg-list2 {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-content: space-around;
+        flex-wrap: wrap;
+        gap: 10px;
+        width: 97%;
+        margin-bottom: 10px;
+    }
+
+    .card-marseille {
+        width: 95%;
+        height: 199px;
+    }
+
+    .card-marseille img {
+        padding-left: 6px;
+        padding-top: 7px;
+        width: 97%;
+        height: 60%;
+    }
+
+    .card-pres h4 {
+        font-size: 17px;
+    }
+
+    .card-pres p {
+        font-size: 16px;
+    }
+
+    /* More Block */
+    .more {
+        margin: 19px 0 25px 20px;
+    }
+
+    .more a {
+        font-size: 17px;
+        font-weight: bold;
+    }
+
+    /* Activites Block */ 
+    #activites {
+        height: inherit;
+        margin: 0;
+    }
+
+    #activites h2 {
+        padding: 20px 0 0 14px;
+    }
+
+    .activites-list {
+        display: flex;
+        justify-content: flex-start;
+        flex-direction: column;
+        width: 100%;
+        gap: 25px;
+        margin-bottom: 50px;
+    }
+
+    .activite-double {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        gap: 25px;
+    }
+
+    .activites-left, .activites-right {
+        width: 100%;
+        display: flex;
+        gap: 25px;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-items: center;
+    }
+
+    .activite1, .activite4 {
+        width: 90%;
+        height: 190px;
+    }
+
+    .activite2, .activite3, .activite5, .activite6 {
+        width: 90%;
+        margin-bottom: 0;
+        margin-top: 0;
+    }
+
+    .activite1 img, .activite4 img {
+        width: 100%;
+        height: 72%;
+    }
+
+    .activite2 img, .activite3 img, .activite5 img, .activite6 img {
+        width: 100%;
+        height: 72%;
+    }
+
+    .activite1 h3, .activite4 h3 {
+        font-size: 18px;
+        font-weight: bolder;
+        margin: 10px 0 0 15px;
+    }
+
+    .activite2 h3, .activite3 h3, .activite5 h3, .activite6 h3 {
+        font-size: 18px;
+        font-weight: bolder;
+        margin: 10px 0 0 15px;
+    }
+
+    /* Footer Block */
+    footer {
+        display: flex;
+        background-color: #F2F2F2;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 29px;
+        align-content: flex-start;
+        padding: 33px 0 25px 20px;
+        flex-wrap: wrap;
+    }
+
+    .footerleft, .footermiddle, .footerright {
+        display: flex;
+        gap: 9px;
+        align-items: flex-start;
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+
+    .footerleft h3, .footermiddle h3, .footerright h3 {
+        margin-bottom: 8px;
+    }
+
+    .footerleft a, .footermiddle a, .footerright a {
+        font-size: 18px;
+    }
+    
 }
