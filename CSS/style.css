@@ -194,7 +194,7 @@ header {
     border: 1px solid #e4e3e3;
     border-radius: 50px;
     height: 20px;
-    width: 28px;
+    width: 20px;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -204,7 +204,7 @@ header {
 
 /* Main */
 main {
-    margin: 0 30px 20px 30px;
+    margin: 0 30px 0 0;
 }
 
 #principal {
@@ -255,6 +255,10 @@ main {
 }
 
 .card-marseille {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
     background-color: #fff;
     border-radius: 20px;
     width: 30%;
@@ -273,12 +277,16 @@ main {
     width: 97%;
     height: 62%;
     object-fit: cover;
-    padding-left: 4px;
-    padding-top: 5px;
+    padding-top: 3px;
     border-radius: 20px 20px 0 0;
 }
 
 .card-pres {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
     width: 100%;
     height: auto;
 }
@@ -375,15 +383,33 @@ main {
 
 .pop-card img {
     border-radius: 20px 0 0 20px;
-    padding: 5px 30px 5px 5px;
+    padding: 5px 15px 5px 5px;
     width: 34%;
     object-fit: cover;
+}
+
+.pop-pres {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    gap: 20px;
+}
+
+.pop-pres h4 {
+    margin-bottom: -28px;
+    margin-top: 13px;
+}
+
+.pop-pres p {
+    font-size: 14px;
 }
 
 /* Activites Block */
 #activites {
     height: 90%;
-    margin: 0 30px 50px 30px;
+    margin: 0 30px 50px 47px;
     display: flex;
     flex-direction: column;
     align-content: space-around;
@@ -393,48 +419,53 @@ main {
 .activites-list {
     display: flex;
     justify-content: space-around;
+    gap: 20px;
 }
 
 .activites-left {
-    width: 48%;
+    width: 50%;
     display: flex;
-    gap: 39px;
+    gap: 40px;
     justify-content: flex-start;
     flex-wrap: wrap;
 }
 
 .activites-right {
-    width: 48%;
+    width: 50%;
     display: flex;
-    gap: 39px;
+    gap: 40px;
     flex-wrap: wrap;
     justify-content: flex-start;
 }
 
 .activite-double {
     display: flex;
+    width: 44%;
     flex-direction: column;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 /* Activites left Block */
 .activite1, .activite4 {
     height: 384px;
+    width: 47%;
     border-radius: 20px;
     background-color: #fff;
     box-shadow: 2px 3px 5px 3px rgba(0, 0, 0, 0.2);
 }
 
 .activite1 img, .activite4 img {
-    width: 337px;
-    height: 90%;
+    width: 100%;
+    height: 85%;
     border-radius: 20px 20px 0 0;
     object-fit: cover;
 }
 
 .activite1 h3, .activite4 h3 {
-    margin: 14px 0 20px 20px;
-    font-size: 14px;
+    margin: 10px 0 0px 15px;
+    font-size: 17px;
+    font-weight: bold;
 }
 
 .activite2 {
@@ -446,15 +477,16 @@ main {
 }
 
 .activite2 img {
-    width: 366px;
-    height: 75%;
+    width: 100%;
+    height: 70%;
     border-radius: 20px 20px 0 0;
     object-fit: cover;
 }
 
 .activite2 h3 {
-    margin: 10px 0 10px 20px;
-    font-size: 14px;
+    margin: 10px 0 0 15px;
+    font-size: 17px;
+    font-weight: bold;
 }
 
 .activite3 {
@@ -467,15 +499,16 @@ main {
 }
 
 .activite3 img {
-    width: 366px;
-    height: 69%;
+    width: 100%;
+    height: 59%;
     border-radius: 20px 20px 0 0;
     object-fit: cover;
 }
 
 .activite3 h3 {
-    margin: 10px 0 10px 20px;
-    font-size: 14px;
+    margin: 10px 0 0 15px;
+    font-size: 17px;
+    font-weight: bold;
 }
 
 /* Activites Right Block */
@@ -488,15 +521,16 @@ main {
 }
 
 .activite5 img, .activite6 img {
-    width: 366px;
-    height: 69%;
+    width: 100%;
+    height: 67%;
     border-radius: 20px 20px 0 0;
     object-fit: cover;
 }
 
 .activite5 h3, .activite6 h3 {
-    margin: 14px 0 20px 20px;
-    font-size: 14px;
+    margin: 10px 0 0 15px;
+    font-size: 17px;
+    font-weight: bold;
 }
 
 #activites .activite1:hover, .activite2:hover, .activite3:hover, .activite4:hover, .activite5:hover, .activite6:hover {
@@ -546,165 +580,55 @@ footer a:hover{
 }
 
 /* MEDIA QUERIES */
-/* Media for Big screen */
-@media screen and (min-width: 2560px) {
-    /* Adjusting the main container to be small */
-    main {
-        width: 63%;
-        margin: auto;
-    }
-
-    .search-icon{
-        display: none;
-    }
-}
-
-@media screen and (max-width: 1440px) {
-    .activites-list {
-        display: flex;
-        justify-content: flex-start;
-        gap: 35px;
-    }
-
-    .activite1 img, .activite4 img {
-        width: 300px;
-    }
-
-    .activite-double {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-    }
-
-    .activite2 img, .activite3 img {
-        width: 290px;
-    }
-
-    .activite5 img, .activite6 img {
-        width: 290px;
-    }
-
-    .search-icon{
-        display: none;
-    }
-
-}
-
-@media screen and (max-width: 1024px) {
-    header {
-        margin: 18px;
-    }
-
-    /* Hebergement Block */
-    #hebergements {
-        height: 100%;
-    }
-
-    .card-marseille {
-        width: 180px;
-        height: 200px;
-    }
-
-    .card-pres h4 {
-        font-size: 15px;
-        margin: 1px 0 2px 15px;
-    }
-
-    .more {
-        margin: 0 0 20px 30px;
-    }
-
-    /* Populaire Block */
-    #populaires {
-        height: 100%;
-    }
-    .pop-card {
-        width: 80%;
-        height: 134px;
-        margin: 0px 0 30px 0;
-    }
-
-    .pop-card img {
-        padding-right: 7px;
-     }
-
-    .pop-title{
-        font-size: 12px;
-    }
-
-    .pop-pres h4{
-        font-size: 14px;
-        margin-bottom: 2px;
-    }
-
-    #activites {
-        height: 90%;
-        margin: 0 15px 50px 21px;
-        display: flex;
-        flex-direction: column;
-        align-content: space-around;
-        justify-content: center;
-    }
-
-    .activite4 h3 {
-        font-size: 13px;
-        margin-bottom: 2px;
-    }
-
-    .pop-pres p {
-        font-size: 13px;
-        margin: 2px;
-    }
-
-    .activite-double {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .activites-right {
-        width: 50%;
-        display: flex;
-        gap: 23px;
-        flex-wrap: wrap;
-        justify-content: flex-start;
-    }
-
-    .activites-left {
-        width: 50%;
-        display: flex;
-        gap: 26px;
-        justify-content: flex-start;
-        flex-wrap: wrap;
-    }
-
-    .activite1 h3, .activite4 h3 {
-        margin: 7px 0 0 10px;
-    }
-
-    .activite5 h3, .activite6 h3 {
-        margin: 11px 0 0px 3px;
-        font-size: 14px;
-    }
-
-    .activite1 img, .activite4 img {
-        width: 215px;
-    }
-
-    .activite2 img, .activite3 img {
-        width: 205px;
-    }
-
-    .activite5 img, .activite6 img {
-        width: 206px;
-    }
-
-    .search-icon{
-        display: none;
-    }
-}
 
 /* Tablet Responsive*/
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 992px) {
+    .header {
+        margin: 0;
+    }
+
+    .logo {
+        width: 100%;
+        text-align: center;
+    }
+
+    .logo img {
+        margin-top: 20px;
+        height: 100px;
+    }
+
+    /* Nav-Bar */
+    .nav-bar {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .nav-list {
+        position: relative;
+        padding: 0;
+        margin: 0;
+    }
+
+    .nav-link {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 32px;
+        width: 100%;
+        padding: 0;
+    }
+
+    .nav-link a {
+        display: block;
+        width: 100%;
+        padding: 0 0 17px 0;
+        text-align: center;
+        border-bottom: 3px solid #F2F2F2;
+    }
+
+    .nav-link a:hover {
+        border-top: none;
+        border-bottom: 3px solid #0065FC;
+    }
 
     #filtre {
         display: flex;
@@ -713,10 +637,6 @@ footer a:hover{
         justify-content: flex-start;
         margin-top: 25px;
         align-items: flex-start;
-    }
-
-    .search-icon{
-        display: none;
     }
 
     #banner {
@@ -759,33 +679,6 @@ footer a:hover{
         padding: 20px 20px 5px 20px;
     }
 
-    .pop-card {
-        width: 90%;
-        height: 185px;
-        margin: 0px 0 30px 0;
-    }
-
-    .pop-card img {
-        width: 40%;
-    }
-
-    .pop-pres {
-        display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
-        align-items: flex-start;
-        justify-content: space-between;
-    }
-
-    .pop-pres h4 {
-        font-size: 20px;
-    }
-
-    .pop-pres p {
-        font-size: 18px;
-        margin-top: -63px;
-    }
-
     .rating-pop {
         margin-bottom: 15px;
     }
@@ -811,26 +704,21 @@ footer a:hover{
     }
 
     .card-marseille {
-        width: 90%;
+        width: 98%;
         height: 260px;
     }
 
     .card-marseille img {
         overflow: auto;
-        width: 98%;
+        width: 99%;
         height: 67%;
         object-fit: cover;
-        padding-left: 7px;
         padding-top: 5px;
         border-radius: 20px 20px 0 0;
     }
 
     .card-pres h4 {
-        font-size: 18px;
-    }
-
-    .card-pres p {
-        font-size: 17px;
+        margin: 8px 0 2px 15px;
     }
 
     .more {
@@ -877,31 +765,34 @@ footer a:hover{
         display: flex;
         flex-direction: column;
         justify-content: space-between;
+        width: 90%;
     }
 
     .double-right {
         gap: 39px;
     }
 
-    .activite1 img, .activite4 img {
-        width: 309px;
+    .activite1, .activite4 {
+        height: 220px;
+        width: 90%;
     }
 
-    .activite2, .activite3 {
-        height: 170px;
+    .activite2, .activite3, .activite5, .activite6 {
+        height: 220px;
     }
 
-    .activite2 img, .activite3 img {
-        width: 309px;
+    .activite1 h3, .activite4 h3, .activite2 h3, .activite3 h3, .activite5 h3, .activite6 h3 {
+        margin: 4px 0 0px 15px;
     }
 
-    .activite5 img, .activite6 img {
-        width: 309px;
+    .activite2 img, .activite3 img, .activite5 img, .activite6 img{
+        height: 85%;
     }
+
 }
 
 /* Mobile responsive */
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 768px) {
     .header {
         margin: 0;
     }
@@ -1055,20 +946,22 @@ footer a:hover{
     }
 
     .pop-pres h4 {
-        font-size: 19px;
+        font-size: 18px;
+        padding-top: 15px;
         margin: 0;
     }
 
     .pop-pres p {
         margin: 0;
-        margin-top: -24px;
-        font-size: 16px;
+        margin-top: -13px;
+        font-size: 15px;
     }
 
     /* Hebergement Block */
     #hebergements h2 {
         font-weight: bold;
-        padding: 20px 0 0 14px;
+        padding: 20px 0 0 9px;
+        font-size: 19px;
     }
 
     .heberg-list {
@@ -1088,7 +981,7 @@ footer a:hover{
         justify-content: flex-start;
         align-content: space-around;
         flex-wrap: wrap;
-        gap: 10px;
+        gap: 15px;
         width: 97%;
         margin-bottom: 10px;
     }
@@ -1099,14 +992,21 @@ footer a:hover{
     }
 
     .card-marseille img {
-        padding-left: 6px;
-        padding-top: 7px;
         width: 97%;
         height: 60%;
     }
 
+    .card-pres {
+        height: fit-content;
+    }
+
     .card-pres p {
+        margin: 2px 0 2px 15px;
         font-size: 15px;
+    }
+
+    .rating-heberg {
+        margin: 0px 0 0 15px;
     }
 
     /* More Block */
