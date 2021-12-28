@@ -582,7 +582,7 @@ footer a:hover{
 /* MEDIA QUERIES */
 
 /* Tablet Responsive*/
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 991px) {
     .header {
         margin: 0;
     }
@@ -689,7 +689,8 @@ footer a:hover{
     }
 
     .heberg-list {
-        gap: 20px;
+        gap: 25px;
+        flex-direction: row;
     }
 
     .heberg-list1, .heberg-list2 {
@@ -699,7 +700,7 @@ footer a:hover{
         justify-content: flex-start;
         align-items: center;
         margin-bottom: 0;
-        width: 99%;
+        width: 45%;
         gap: 20px;
     }
 
@@ -792,7 +793,7 @@ footer a:hover{
 }
 
 /* Mobile responsive */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
     .header {
         margin: 0;
     }
